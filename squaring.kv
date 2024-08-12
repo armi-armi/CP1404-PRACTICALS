@@ -1,0 +1,15 @@
+<SquareNumber>:
+    orientation: 'vertical'
+    BoxLayout:
+        orientation: 'horizontal'
+        TextInput:
+            id: input_number
+            text: ''
+        Button:
+            text: 'Square'
+            on_press: root.calculate_square()
+        Label:
+            text: root.output_text
+            color: (1, 0, 1, 1)  # Pink color for the output label
+    Label:
+        text: 'Enter a number and press "Square"'
